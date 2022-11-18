@@ -1,6 +1,6 @@
 #!/bin/bash
-for f in /incoming/*.txt; 
+for f in *.txt; 
 do 
-	head -2 $f > "new_$f";
+	head -c -20 $f > "new_$f";
 	rm -rf $f
 done
